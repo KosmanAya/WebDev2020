@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Twitter web</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .right {
+            float: right;
+            padding: 150px 200px 0px 0px;
+            /* margin-right: 230px;
+            margin-bottom: 1400px; */
+        }
+
+        .left {
+            float: left;
+            position: relative;
+            text-align: center;
+            font-size: 20px;
+            /* color: white; */
+        }
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .photo {
+            z-index: 2;
+        }
+
+        .two {
+            z-index: 1;
+        }
+
+        .Mir {
+            font-size: 34px;
+            margin-top: 15px;
+            font-weight: 700px;
+            font-style: normal;
+        }
+
+        .Now {
+            font-size: 15px;
+            margin-top: 55px;
+            font-weight: 700px;
+            font-style: normal;
+        }
+
+        .fa {
+            margin-top: 15px;
+            color: white;
+            background-color: #1e90ff;
+            width: 370px;
+            height: 30px;
+            border: 1px inset #1e90ff;
+            border-radius: 16px;
+            text-align: center;
+        }
+
+        .faa {
+            margin-top: 15px;
+            color: #1e90ff;
+            background-color: white;
+            width: 370px;
+            height: 30px;
+            border: 1px inset #1e90ff;
+            border-radius: 16px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="left">
+            <img width="600px" width="600px"
+                src="data:image/jpeg;base64,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" />
+            <div class="centered">
+                <div>
+                    <img src="https://st2.depositphotos.com/7847268/10703/v/950/depositphotos_107034244-stock-illustration-search-icon-isolated.jpg"
+                        alt="поиск" width="20px" />
+                    Читайте о том, что вам интересно.
+                </div>
+                <div>
+                    <img src="https://thumbs.dreamstime.com/b/икона-людей-символ-группы-или-пар-друзей-контактов-потребителей-109959291.jpg"
+                        alt="поиск" width="20px" />
+                    Читайте о том, что в мире.
+                </div>
+                <div>
+                    <img src="https://static.thenounproject.com/png/1380338-200.png" alt="поиск" width="20px" />
+                    Присоединяйтесь к общению.
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="right">
+            <img src="https://cdn.icon-icons.com/icons2/836/PNG/512/Twitter_icon-icons.com_66803.png"
+                alt="znak" width="70px" />
+            <h2 class="Mir">
+                Узнайте, что происходит<br />
+                в мире прямо сейчас
+            </h2>
+            <h3 class="Now">Присоединяйтесь к Твиттеру прямо сейчас!</h3>
+
+            <input type="text" class="fa" value="Зарегистрироваться" />
+            <p>
+                <input type="text" class="faa" value="Войти" />
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
