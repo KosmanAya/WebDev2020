@@ -72,12 +72,7 @@
         border:1px inset rgb(161, 161, 248);
         height:30px;
         margin-top: 20px;
-    }
-    .mob{
-        
-        width:349px;
-        border:1px inset rgb(161, 161, 248);
-        height:30px;
+    } 
         margin-top:10px;
         
     }
@@ -97,6 +92,7 @@
         font-size:11px;
         font-weight: bold;
     }
+    
     .Mika{
         font-size:9px;
         color: gray;
@@ -152,8 +148,8 @@
      <p>Легко и Быстро</p>
      <table>
      <tr>
-     <td><input type="text" class="fa" value="Имя"></td>
-     <td><input type="text" class="fa" value="Фамилия"></td>
+     <td><input type="text" class="fa" placeholder="Имя"autocomplete="on"></td>
+     <td><input type="text" class="fa" ="Фамилия"></td>
      </tr>
      <tr>
      <td colspan="2"><input type="text" class="mob "value="Номер мобильного телефона или эл.адреса"></td>
@@ -165,7 +161,14 @@
      <td><p class="ya">Дата Рождения</td></p>
      </tr> 
      <tr>
-     <td> <select class="Data"><option>День</option></select>
+     <td> <select class="Data" required><option>День</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        </select>
+    </select>
      <select class="Data"><option>Месяц</option></select>
      <select class="Data"><option>Год</option> </select>
     <td> <p class="Why"><a href="a">Зачем указывать дату<br>рождения?</a></p> </td>
@@ -176,8 +179,8 @@
         </tr> 
      <tr>
          <td>
-           <input type="radio" class="gend"value="Женщина"><label class="G">Женщина</label>
-           <input type="radio" class="gend"value="Мужчина"><label class="G">Мужчина</label>
+            <label><input type="radio" class="gend" checked name="dva"/>Женщина</label> <label><input type="radio" class="gend" name="dva"/>Мужчина</label>
+           
              </td>
      </tr>
      <tr>
