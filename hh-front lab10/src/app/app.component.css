@@ -1,0 +1,8 @@
+.login {
+    display: grid;
+    padding: 20px;
+    justify-content: center;
+}
+button {
+    margin-top: 1rem;
+}
